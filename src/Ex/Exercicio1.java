@@ -9,7 +9,6 @@ public class Exercicio1 {
         double pi = 3.14159;
         double area = pi * (raio * raio);
         System.out.printf("a area do seu circulo é %.2f", area);
-
         sc.close();
     }
 }
