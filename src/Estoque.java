@@ -14,6 +14,8 @@ public class Estoque {
         int quantidade = sc.nextInt();
 
         Produto item = new Produto(nome, preco ,quantidade);
+        item.setNome("computador");
+        System.out.println(item.getNome());
 
         item.MostrarProdutos();
 
@@ -28,9 +30,6 @@ public class Estoque {
         item.RemoveProdutos(quantRemove);
 
         item.MostrarProdutos();
-
-
-
 
     }
 }
