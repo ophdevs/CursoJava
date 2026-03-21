@@ -27,7 +27,6 @@ public class SistemaBanco {
 
         user.setSaldo(depositoInicial);
 
-
         System.out.println("deseja depositar ou sacar: d/s ");
         String escolha = sc.nextLine();
 
