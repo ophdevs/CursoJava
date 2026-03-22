@@ -19,11 +19,11 @@ public class SistemaBanco {
         double depositoInicial = 0;
 
         if (decisao.equals("s")){
-            System.out.print("digite o valor de deposito inicial: ");
+            System.out.print("digite o valor de deposito ini                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   bc ial: ");
             depositoInicial = sc.nextDouble();
             sc.nextLine();
         }
-        ContaBanco user = new ContaBanco(numero, nome, depositoInicial);
+        ContaBanco user = new ContaBanco(numero, nome, depositoInicial); //nao sei como funciona mas funciona
 
         user.setSaldo(depositoInicial);
 
