@@ -1,32 +1,22 @@
 package entities;
 
 public class Pensionato {
-    private String quarto;
-    private double aluguel;
+    private int quarto;
     private String nome;
     private String email;
 
-    public Pensionato(String quarto, double aluguel, String nome, String email) {
-        this.quarto = quarto;
-        this.aluguel = aluguel;
+    public Pensionato(String nome, String email, int quarto) {
         this.nome = nome;
         this.email = email;
+        this.quarto = quarto;
     }
 
-    public String getQuarto() {
+    public int getQuarto() {
         return quarto;
     }
 
-    public void setQuarto(String quarto) {
+    public void setQuarto(int quarto) {
         this.quarto = quarto;
-    }
-
-    public double getAluguel() {
-        return aluguel;
-    }
-
-    public void setAluguel(double aluguel) {
-        this.aluguel = aluguel;
     }
 
     public String getNome() {
@@ -44,4 +34,5 @@ public class Pensionato {
     public void setEmail(String email) {
         this.email = email;
     }
+
 }
