@@ -29,7 +29,11 @@ public class Exercicio7 {
             System.out.println("Qual numero do quarto :");
             int quarto = sc.nextInt();
             sc.nextLine();
+
+            usuario[quarto] = new Pensionato(nome, email, quarto);
         }
+
+
 
         for (int i = 1; i < 10; i++){
             if (usuario[i] != null){
