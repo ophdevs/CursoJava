@@ -38,4 +38,12 @@ public class Funcionarios {
     public void setSalario(Double salario) {
         this.salario = salario;
     }
+
+    public void SalarioTotal (double porc){
+        this.salario = this.salario + (this.salario * porc / 100);
+    }
+
+    public String toString() {
+        return "ID: "+ id + ", Nome: " + name + ", Salario: " + salario;
+    }
 }
