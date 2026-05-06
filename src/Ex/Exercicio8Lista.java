@@ -14,7 +14,7 @@ public class Exercicio8Lista {
         int quantFun = sc.nextInt();
         sc.nextLine();
 
-        for (int i = 0; i < quantFun; i++){
+        for (int i = 0; i < quantFun; i++) {
             System.out.print("ID: ");
             Integer id = sc.nextInt();
             sc.nextLine();
@@ -24,7 +24,7 @@ public class Exercicio8Lista {
             Double salario = sc.nextDouble();
             System.out.println("------------------------------------");
 
-            Funcionarios func = new Funcionarios(id, name,salario);
+            Funcionarios func = new Funcionarios(id, name, salario);
             list.add(func);
         }
 
@@ -34,7 +34,7 @@ public class Exercicio8Lista {
         sc.nextLine();
         Integer pos = VerificarID(list, idBusca);
 
-        if (pos == null){
+        if (pos == null) {
             System.out.println("ID nao encontrado!");
         } else {
             System.out.println("Digite a porcentagem: ");
@@ -42,21 +42,20 @@ public class Exercicio8Lista {
             list.get(pos).SalarioTotal(porcentagem);
         }
 
-        for (Funcionarios func : list){
+        for (Funcionarios func : list) {
             System.out.println(func);
         }
-
 
 
         sc.close();
     }
 
-    public static Integer VerificarID (List<Funcionarios> list, int id){
-        for(int i = 0; i < list.size(); i++){
-            if (list.get(i).getId() == id){
+    public static Integer VerificarID(List<Funcionarios> list, int id) {
+        for (int i = 0; i < list.size(); i++) {
+            if (list.get(i).getId() == id) {
                 return i;
             }
-            return null;
         }
+        return null;
     }
 }
