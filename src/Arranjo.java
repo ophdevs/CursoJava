@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class arranjo {
+public class Arranjo {
     static void main() {
         Scanner sc = new Scanner(System.in);
 

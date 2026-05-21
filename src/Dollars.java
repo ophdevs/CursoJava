@@ -1,5 +1,5 @@
 import java.util.Scanner;
-import util.calculator;
+import util.Calculator;
 
 public class Dollars {
     public static void main(String[] args) {
@@ -9,7 +9,7 @@ public class Dollars {
         System.out.print("Quantos dollar voce quer comprar: $ ");
         double quantDollar = sc.nextDouble();
 
-        double somaDollar = calculator.SomarDollar(dollarAtual, quantDollar);
+        double somaDollar = Calculator.SomarDollar(dollarAtual, quantDollar);
 
         System.out.printf("A quantidade em reais é %.2f", somaDollar);
 

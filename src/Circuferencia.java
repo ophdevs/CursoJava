@@ -1,8 +1,8 @@
-import util.calculator;
+import util.Calculator;
 
 import java.util.Scanner;
 
-import static util.calculator.*;
+import static util.Calculator.*;
 
 public class Circuferencia {
 
@@ -13,12 +13,12 @@ public class Circuferencia {
         System.out.print("digite o raio do triangulo: ");
         double r = sc.nextDouble();
 
-        double c = calculator.Circunfe(r);
-        double v = calculator.Volume(r);
+        double c = Calculator.Circunfe(r);
+        double v = Calculator.Volume(r);
 
         System.out.printf("cicuferencia: %.2f %n", c);
         System.out.printf("Volume: %.2f %n", v);
-        System.out.printf("pi:  %.2f %n", calculator.PI);
+        System.out.printf("pi:  %.2f %n", Calculator.PI);
 
         sc.close();
 

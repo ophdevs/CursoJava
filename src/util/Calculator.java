@@ -1,6 +1,6 @@
 package util;
 
-public class calculator {
+public class Calculator {
     public static  final double PI = 3.14;
 
     public static  final double IOF = 0.06;
