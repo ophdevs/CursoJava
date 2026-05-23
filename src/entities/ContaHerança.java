@@ -3,7 +3,7 @@ package entities;
 public class ContaHerança {
     private Integer numero;
     private String Titular;
-    private Double saldo;
+    protected Double saldo;
 
     public ContaHerança (){
 
