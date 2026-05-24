@@ -1,6 +1,6 @@
 package entities;
 
-public class ContaEmpressaHerança extends ContaHerança {
+public class ContaEmpressaHerança extends ContaBanco {
     private Double limiteEmprestimo;
 
     public ContaEmpressaHerança(){
@@ -14,7 +14,13 @@ public class ContaEmpressaHerança extends ContaHerança {
 
     public void Emprestimo(Double valor){
         if (valor <= limiteEmprestimo){
-            depositoConta(valor);
+            Deposito(valor);
         }
+    }
+
+    @Override
+    public void Saque (double valorSaque){ // usando o super para valores extras
+        super.Saque(valorSaque);
+        saldo -= 3.0;
     }
 }

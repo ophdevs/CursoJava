@@ -1,14 +1,15 @@
 package entities;
 
-public class SavingsAccountHerança  extends ContaHerança{
+public class SavingsAccountHerança  extends ContaBanco{
     private Double interestRate;
 
     public SavingsAccountHerança() {
-        super();
+        super( );
+
     }
 
-    public SavingsAccountHerança(Integer numero, String titular, Double saldo, Double interestRate) {
-        super(numero, titular, saldo);
+    public SavingsAccountHerança(int numeroConta, String nome, double saldo, Double interestRate) {
+        super(numeroConta, nome, saldo);
         this.interestRate = interestRate;
     }
 
@@ -22,6 +23,11 @@ public class SavingsAccountHerança  extends ContaHerança{
 
     public void updateBalance (){
         saldo += saldo * interestRate;
+    }
+
+    @Override
+    public void Saque (double valorSaque){
+        saldo -= valorSaque;
     }
 
 }

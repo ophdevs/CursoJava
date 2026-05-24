@@ -1,6 +1,6 @@
 package entities;
 
-public class ContaHerança {
+public abstract class ContaHerança {
     private Integer numero;
     private String Titular;
     protected Double saldo;
@@ -44,4 +44,5 @@ public class ContaHerança {
     }
 
 
+    public abstract void Saque(double valorSaque);
 }

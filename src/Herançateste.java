@@ -1,24 +1,20 @@
+import entities.ContaBanco;
 import entities.ContaEmpressaHerança;
 import entities.ContaHerança;
+import entities.SavingsAccountHerança;
 
 public class Herançateste {
     public static void main(String[] args) {
-        ContaHerança acc = new ContaHerança(1001, "pedro", 500.0);
-        ContaEmpressaHerança ecc = new ContaEmpressaHerança(1002, "antonio", 0.0, 6000.0);
+        ContaBanco acc1 = new ContaBanco(1001,"gabriel", 200.0);
+        acc1.Saque(150);
+        System.out.println(acc1.getSaldo());
 
-        //UPCASTING
+        ContaBanco acc2 = new SavingsAccountHerança(1003, "fabio", 200.0, 0.01 );
+        acc2.Saque(150);
+        System.out.println(acc2.getSaldo());
 
-        ContaHerança acc1 = ecc;
-        ContaHerança acc2 = new ContaEmpressaHerança(1003,"carvalho", 100.0, 5400.0);
-
-        // DOWNCASTING
-
-        ContaEmpressaHerança ecc1 = (ContaEmpressaHerança) acc1;
-        ecc1.Emprestimo(300.0);
-
-
-        System.out.println(ecc1.getSaldo());
-
-
+        ContaBanco acc3 = new ContaEmpressaHerança(1004, "joao", 200.0, 400.0);
+        acc3.Saque(150);
+        System.out.println(acc3.getSaldo());
     }
 }
