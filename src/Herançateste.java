@@ -16,6 +16,7 @@ public class Herançateste {
         ContaEmpressaHerança ecc1 = (ContaEmpressaHerança) acc1;
         ecc1.Emprestimo(300.0);
 
+
         System.out.println(ecc1.getSaldo());
 
 
