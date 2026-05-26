@@ -45,7 +45,7 @@ public class ExercicioFixaçãoPOO {
         double sum = 0;
         for (TaxPayer tp : tax){
             double taxe = tp.tax();
-            System.out.println(tp.getName() + " : $ " + String.format("%.2f", tax));
+            System.out.println(tp.getName() + " : $ " + String.format("%.2f", taxe));
             sum += taxe;
         }
 

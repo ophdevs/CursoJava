@@ -1,7 +1,7 @@
 package entities;
 
 public class Company  extends TaxPayer{
-    public Integer numberOfEmployees;
+    private Integer numberOfEmployees;
 
     public Company(Integer numberOfEmployees) {
         this.numberOfEmployees = numberOfEmployees;
