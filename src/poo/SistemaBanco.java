@@ -1,6 +1,6 @@
 package poo;
 
-import entities.ContaBanco;
+import model.entities.ContaBanco;
 
 import java.util.Scanner;
 

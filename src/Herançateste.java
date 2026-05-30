@@ -1,7 +1,6 @@
-import entities.ContaBanco;
-import entities.ContaEmpressaHerança;
-import entities.ContaHerança;
-import entities.SavingsAccountHerança;
+import model.entities.ContaBanco;
+import model.entities.ContaEmpressaHerança;
+import model.entities.SavingsAccountHerança;
 
 public class Herançateste {
     public static void main(String[] args) {

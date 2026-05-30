@@ -1,17 +1,11 @@
-<<<<<<< HEAD:src/Ex/Exercicio12Polimorfismo.java
-package Ex;
-=======
 package exercicios;
->>>>>>> 90621b692f9f72a07d1a7d753761b0564b5094c1:src/exercicios/Exercicio12Polimorfismo.java
 
-import entities.ImportedProduct;
-import entities.UsedProduct;
-import entities.comumProduct;
+import model.entities.ImportedProduct;
+import model.entities.UsedProduct;
+import model.entities.comumProduct;
 
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
-import java.util.ArrayList;
-import java.util.Date;
 import java.util.Scanner;
 
 public class Exercicio12Polimorfismo {

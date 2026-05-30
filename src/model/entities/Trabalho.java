@@ -1,8 +1,8 @@
-package entities;
+package model.entities;
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.List;
-import entities.enums.NivelTrabalho;
+import model.entities.enums.NivelTrabalho;
 
 public class Trabalho {
     private String name;

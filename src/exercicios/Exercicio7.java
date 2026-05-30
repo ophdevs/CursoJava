@@ -1,6 +1,6 @@
 package exercicios;
 
-import entities.Pensionato;
+import model.entities.Pensionato;
 
 import java.util.Scanner;
 

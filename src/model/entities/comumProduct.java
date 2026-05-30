@@ -1,6 +1,4 @@
-package entities;
-
-import java.util.Scanner;
+package model.entities;
 
 public class comumProduct {
     private String name;

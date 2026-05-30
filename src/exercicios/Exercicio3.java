@@ -1,8 +1,7 @@
 package exercicios;
 
-import entities.Funcionario;
+import model.entities.Funcionario;
 
-import java.sql.SQLOutput;
 import java.util.Scanner;
 
 

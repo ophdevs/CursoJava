@@ -1,7 +1,6 @@
 package exercicios;
 
-import entities.Funcionario;
-import entities.Funcionarios;
+import model.entities.Funcionarios;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;

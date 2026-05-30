@@ -1,6 +1,6 @@
 package exercicios;
 
-import entities.ProductArray;
+import model.entities.ProductArray;
 
 import java.util.Scanner;
 

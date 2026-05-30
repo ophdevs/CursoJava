@@ -18,7 +18,7 @@ src/
 ├── dataHora/            → API de data e hora (java.time)
 ├── collections/         → Coleções (List, ArrayList)
 ├── heranca/             → Herança e polimorfismo
-├── entities/            → Classes de entidade usadas nos exemplos
+├── model.entities/            → Classes de entidade usadas nos exemplos
 │   └── enums/           → Enumerações
 ├── exercicios/          → Exercícios de fixação (Ex01 ao Ex12)
 └── util/                → Classes utilitárias (Calculator)
@@ -86,7 +86,7 @@ src/
 |---|---|
 | `Herançateste.java` | Testa hierarquia de herança com `ContaBanco`, `SavingsAccount` e `ContaEmpresa` |
 
-### `entities`
+### `model.entities`
 Classes de entidade reutilizadas pelos exemplos e exercícios: `Triangulo`, `ContaBanco`, `Funcionario`, `Produto`, `TaxPayer`, `Individual`, `Company`, `Animais`, `Cachorro`, `Gato`, `Order`, `Trabalho`, entre outras.
 
 ### `exercicios`

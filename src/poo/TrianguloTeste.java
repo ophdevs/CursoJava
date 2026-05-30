@@ -1,6 +1,6 @@
 package poo;
 
-import entities.Triangulo;
+import model.entities.Triangulo;
 import java.util.Scanner;
 
 public class TrianguloTeste {

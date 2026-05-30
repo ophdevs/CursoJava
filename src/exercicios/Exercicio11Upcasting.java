@@ -1,14 +1,8 @@
-<<<<<<< HEAD:src/Ex/Exercicio11Upcasting.java
-package Ex;
-=======
 package exercicios;
->>>>>>> 90621b692f9f72a07d1a7d753761b0564b5094c1:src/exercicios/Exercicio11Upcasting.java
 
-import entities.Animais;
-import entities.Cachorro;
-import entities.Gato;
-
-import java.util.ArrayList;
+import model.entities.Animais;
+import model.entities.Cachorro;
+import model.entities.Gato;
 
 public class Exercicio11Upcasting {
     public static void main(String[] args) {

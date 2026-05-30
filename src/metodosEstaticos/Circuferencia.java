@@ -1,8 +1,5 @@
-<<<<<<< HEAD:src/Circuferencia.java
-=======
 package metodosEstaticos;
 
->>>>>>> 90621b692f9f72a07d1a7d753761b0564b5094c1:src/metodosEstaticos/Circuferencia.java
 import util.Calculator;
 
 import java.util.Scanner;

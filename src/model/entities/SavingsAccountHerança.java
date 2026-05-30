@@ -1,4 +1,4 @@
-package entities;
+package model.entities;
 
 public class SavingsAccountHerança  extends ContaBanco{
     private Double interestRate;

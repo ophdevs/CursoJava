@@ -1,6 +1,6 @@
 package arrays;
 
-import entities.Produto;
+import model.entities.Produto;
 
 import java.util.Scanner;
 

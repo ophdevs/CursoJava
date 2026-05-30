@@ -1,7 +1,6 @@
-package entities;
+package model.entities;
 
 import java.time.LocalDate;
-import java.util.Date;
 
 public class UsedProduct extends comumProduct {
     protected LocalDate manufactureDate;
