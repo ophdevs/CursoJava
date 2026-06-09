@@ -45,7 +45,6 @@ public class ListaOrganizada {
             }
 
             ArrayList<Integer> resultado = new ArrayList<>();
-
             resultado.addAll(MetodoRecursivo(menores));
             resultado.add(pivo);
             resultado.addAll(MetodoRecursivo(maiores));
