@@ -3,27 +3,33 @@ package recursividade;
 import java.sql.Array;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class ListaOrganizada {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-
         ArrayList<Integer> listaCont = new ArrayList<>();
 
-        System.out.println("quantos numeros deseja inserir: ");
-        int opcao = sc.nextInt();
-        sc.nextLine();
+        try {
+            System.out.println("quantos numeros deseja inserir: ");
+            int opcao = sc.nextInt();
+            sc.nextLine();
 
-        for (int i = 0; i < opcao; i++){
-            int numero;
-            System.out.printf("digite a opcao %d : ", i + 1);
-            numero = sc.nextInt();
-            listaCont.add(numero);
+            for (int i = 0; i < opcao; i++){
+                int numero;
+                System.out.printf("digite a opcao %d : ", i + 1);
+                numero = sc.nextInt();
+                listaCont.add(numero);
+            }
+
+            System.out.println(MetodoRecursivo(listaCont));
+
+        } catch (InputMismatchException e) {
+            System.out.println("ERRO: digite apenas numeros inteiros! ");
+        } finally {
+            sc.close();
         }
-
-        System.out.println(MetodoRecursivo(listaCont));
-        sc.close();
     }
 
     public static ArrayList<Integer> MetodoRecursivo(ArrayList<Integer> array){
