@@ -1,5 +1,7 @@
 package InterfaceComparable;
 
+import InterfaceComparable.entities.Employee;
+
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
@@ -9,20 +11,21 @@ import java.util.Collections;
 
 public class Program {
     public static void main(String[] args) {
-        ArrayList<String> lista = new ArrayList<>();
+        ArrayList<Employee> lista = new ArrayList<>();
         String path = "/home/ph/projetosGit/CursoJava/src/InterfaceComparable/in.txt";
 
         try(BufferedReader br = new BufferedReader(new FileReader(path))){
-            String name = br.readLine();;
-            while (name != null){
-                lista.add(name);
-                name = br.readLine();
+            String employeCsv = br.readLine();;
+            while (employeCsv != null){
+                String[] fields = employeCsv.split(",");
+                lista.add(new Employee(fields[0], Double.parseDouble(fields[1])));
+                employeCsv  = br.readLine();
             }
 
             Collections.sort(lista);
 
-            for (String e: lista) {
-                System.out.println(e);
+            for (Employee emp: lista) {
+                System.out.println(emp.getName() + ", " + emp.getSalary());
             }
 
         }catch (IOException e){
