@@ -1,6 +1,5 @@
 package introducao;
 
-import java.lang.classfile.attribute.SourceFileAttribute;
 import java.util.Scanner;
 
 public class MatematicaEmJava {
