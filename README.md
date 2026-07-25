@@ -8,88 +8,88 @@ Repositório de estudos do curso **Java COMPLETO** do professor Nelio Alves. Con
 
 ```
 src/
-├── introducao/          → Primeiros passos com Java
-├── entradaDados/        → Leitura de dados com Scanner
-├── strings/             → Manipulação de Strings
-├── loops/               → Estruturas de repetição
-├── arrays/              → Vetores e ArrayLists
-├── metodosEstaticos/    → Métodos estáticos e classes utilitárias
-├── poo/                 → Programação Orientada a Objetos (encapsulamento)
-├── dataHora/            → API de data e hora (java.time)
-├── collections/         → Coleções (List, ArrayList)
-├── heranca/             → Herança e polimorfismo
-├── model.entities/            → Classes de entidade usadas nos exemplos
+├── CursoNelioAlves.introducao/          → Primeiros passos com Java
+├── CursoNelioAlves.entradaDados/        → Leitura de dados com Scanner
+├── CursoNelioAlves.strings/             → Manipulação de Strings
+├── CursoNelioAlves.loops/               → Estruturas de repetição
+├── CursoNelioAlves.arrays/              → Vetores e ArrayLists
+├── CursoNelioAlves.metodosEstaticos/    → Métodos estáticos e classes utilitárias
+├── CursoNelioAlves.poo/                 → Programação Orientada a Objetos (encapsulamento)
+├── CursoNelioAlves.dataHora/            → API de data e hora (java.time)
+├── CursoNelioAlves.collections/         → Coleções (List, ArrayList)
+├── CursoNelioAlves.heranca/             → Herança e polimorfismo
+├── CursoNelioAlves.model.entities/            → Classes de entidade usadas nos exemplos
 │   └── enums/           → Enumerações
-├── exercicios/          → Exercícios de fixação (Ex01 ao Ex12)
-└── util/                → Classes utilitárias (Calculator)
+├── CursoNelioAlves.exercicios/          → Exercícios de fixação (Ex01 ao Ex12)
+└── CursoNelioAlves.util/                → Classes utilitárias (Calculator)
 ```
 
 ---
 
 ## Conteúdo por pacote
 
-### `introducao`
+### `CursoNelioAlves.introducao`
 | Arquivo | Descrição |
 |---|---|
 | `PrimeiroPrograma.java` | Lê dois inteiros e imprime a soma — primeiro contato com Scanner e `System.out` |
 | `MatematicaEmJava.java` | Demonstra funções da classe `Math` (sqrt, pow, abs) |
 
-### `entradaDados`
+### `CursoNelioAlves.entradaDados`
 | Arquivo | Descrição |
 |---|---|
 | `EntradaDados.java` | Lê e imprime duas linhas de texto com `Scanner.nextLine()` |
 | `MaiorNumero.java` | Encontra o maior entre três inteiros usando métodos auxiliares |
 
-### `strings`
+### `CursoNelioAlves.strings`
 | Arquivo | Descrição |
 |---|---|
 | `ManipulandoString.java` | Separa uma frase por espaços com `split()` e exibe o primeiro elemento |
 
-### `loops`
+### `CursoNelioAlves.loops`
 | Arquivo | Descrição |
 |---|---|
 | `EstruturaFor.java` | Soma N números fornecidos pelo usuário usando estrutura `for` |
 
-### `arrays`
+### `CursoNelioAlves.arrays`
 | Arquivo | Descrição |
 |---|---|
 | `Arranjo.java` | Calcula a média de alturas armazenadas em um array de doubles |
 | `Arranjo2.java` | Armazena alturas em array e usa `ArrayList` com objetos `Funcionario` |
 | `Estoque.java` | Gerencia estoque de produtos com adição e remoção usando a classe `Produto` |
 
-### `metodosEstaticos`
+### `CursoNelioAlves.metodosEstaticos`
 | Arquivo | Descrição |
 |---|---|
 | `Circuferencia.java` | Calcula circunferência e volume de uma esfera usando a classe `Calculator` |
 | `Dollars.java` | Converte dólares para reais aplicando taxa de IOF via `Calculator` |
 
-### `poo`
+### `CursoNelioAlves.poo`
 | Arquivo | Descrição |
 |---|---|
 | `TrianguloTeste.java` | Calcula e compara a área de dois triângulos com encapsulamento |
 | `SistemaBanco.java` | Sistema bancário simples com depósito e saque usando `ContaBanco` |
 
-### `dataHora`
+### `CursoNelioAlves.dataHora`
 | Arquivo | Descrição |
 |---|---|
 | `DateTIme.java` | Criação, parsing e formatação de `LocalDate`, `LocalDateTime` e `Instant` |
 | `ConverterDateTime.java` | Conversão entre tipos de data com fuso horário |
 | `SomasDateTime.java` | Aritmética de datas (somar/subtrair dias) e cálculo de duração |
 
-### `collections`
+### `CursoNelioAlves.collections`
 | Arquivo | Descrição |
 |---|---|
 | `ListTeste.java` | Operações com `ArrayList`: add, remove e `removeIf` com lambda |
 
-### `heranca`
+### `CursoNelioAlves.heranca`
 | Arquivo | Descrição |
 |---|---|
 | `Herançateste.java` | Testa hierarquia de herança com `ContaBanco`, `SavingsAccount` e `ContaEmpresa` |
 
-### `model.entities`
+### `CursoNelioAlves.model.entities`
 Classes de entidade reutilizadas pelos exemplos e exercícios: `Triangulo`, `ContaBanco`, `Funcionario`, `Produto`, `TaxPayer`, `Individual`, `Company`, `Animais`, `Cachorro`, `Gato`, `Order`, `Trabalho`, entre outras.
 
-### `exercicios`
+### `CursoNelioAlves.exercicios`
 | Arquivo | Descrição |
 |---|---|
 | `Exercicio1.java` | Calcula área de um círculo dado o raio |
@@ -108,7 +108,7 @@ Classes de entidade reutilizadas pelos exemplos e exercícios: `Triangulo`, `Con
 | `ExercicioFixaçãoPOO.java` | Sistema de imposto com `Individual` e `Company` — abstração e polimorfismo |
 | `Matriz.java` | Template base para exercícios com matrizes |
 
-### `util`
+### `CursoNelioAlves.util`
 | Arquivo | Descrição |
 |---|---|
 | `Calculator.java` | Métodos estáticos para cálculo de circunferência, volume e conversão de moeda |
