@@ -3,18 +3,18 @@ package CursoNelioAlves.generics;
 import java.util.ArrayList;
 import java.util.List;
 
-public class printService {
-    private List<Integer> list = new ArrayList<>();
+public class printService<T> {
+    private List<T> list = new ArrayList<>();
 
-    public void addValue(int value){
+    public void addValue(T value){
         list.add(value);
     }
 
-    public Integer firstValue(){
+    public T firstValue(){
         if (list.isEmpty()){
             System.out.println("list is empty");
         }
-            return list.getFirst();
+            return list.get(0);
     }
 
     public void print(){

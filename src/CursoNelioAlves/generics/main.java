@@ -8,12 +8,13 @@ public class main {
 
         System.out.print("How many values? :");
         int valor = sc.nextInt();
+        sc.nextLine();
 
-        printService ps = new printService();
+        printService<String> ps = new printService<>();
 
         for (int i = 0; i < valor; i++ ){
             System.out.print("Digite o valor #" + (i+ 1) + " ");
-            int value = sc.nextInt();
+            String value = sc.nextLine();
             ps.addValue(value);
         }
 
