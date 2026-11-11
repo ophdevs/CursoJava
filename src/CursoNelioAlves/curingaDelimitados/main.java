@@ -18,7 +18,7 @@ public class main {
 
     }
 
-    public static double totalArea (List<? extends shape> list){
+    public static double totalArea (List<? extends shape> list){ // coringa delimitado
         double soma = 0.0;
         for (shape s : list){
             soma += s.area();
