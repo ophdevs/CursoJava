@@ -1,28 +1,32 @@
 package CursoNelioAlves.curingaDelimitados;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 public class main {
     public static void main(String[] args) {
-        List<shape> myshapes = new ArrayList<>();
-        myshapes.add(new retangulo(3.0, 2.0));
-        myshapes.add(new circulo(2.0));
+        List<Integer> myInts = Arrays.asList(1,2,3,4);
+        List<Double> myDoubles = Arrays.asList(3.14, 5.00, 2.34);
+        List<Object> myObjs = new ArrayList<>();
 
-        List<circulo> mycirculos = new ArrayList<>();
-
-        mycirculos.add(new circulo(3.0));
-        mycirculos.add(new circulo(2.0));
-
-        System.out.println("area total: " + totalArea(mycirculos));
+        copy(myInts, myObjs);
+        printList(myObjs);
+        copy(myDoubles, myObjs);
+        printList(myObjs);
 
     }
 
-    public static double totalArea (List<? extends shape> list){ // coringa delimitado
-        double soma = 0.0;
-        for (shape s : list){
-            soma += s.area();
+    public static void copy(List<? extends  Number> origem, List<? super Number> destino){
+        for (Number number : origem){
+            destino.add(number);
         }
-        return soma;
+    }
+
+    public static void printList(List<?> list){
+        for (Object obj : list){
+            System.out.print(obj + " ");
+        }
+        System.out.println(" ");
     }
 }
